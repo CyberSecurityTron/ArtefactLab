@@ -3,88 +3,128 @@
 <head>
     <style>
         body {
-            background-color:rgba(42, 83, 56, 0.514)
+            background-color: rgba(42, 83, 56, 0.514);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: rgba(42, 83, 56, 0.7);
+        }
+
+        .header-container h1 {
+            display: inline-flex;
+            align-items: center;
+            margin: 0;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .header-container img {
+            margin-right: 10px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button, .discord-button {
+            padding: 8px 16px;
+            background-color: #2D89EF;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button:hover {
+            background-color: #1B5FBD;
+        }
+
+        .discord-button {
+            background-color: #7289DA;
+        }
+
+        .discord-button:hover {
+            background-color: #5b6eae;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .centered-content {
+            text-align: center;
+            margin: 30px 20px;
         }
     </style>
+</head>
 <body>
 
-<!-- Title -->
-<h1 style="text-align: center; display: inline-flex; align-items: center; justify-content: center;">
-    <img src="ArtefactLab.png" height="130" width="130" style="margin-right: 10px;">
-    ArtefactLab
-  </h1>
-</head>
+<div class="header-container">
+    <h1>
+        <img src="ArtefactLab.png" height="70" width="70" alt="Logo">
+        ArtefactLab
+    </h1>
+    <div class="nav-buttons">
+        <a href="/index.html"><button>ArtefactLabs</button></a>
+        <a href="/courses.html"><button>Courses</button></a>
+        <a href="https://discord.gg/P6XsFAnNTY" target="_blank" class="discord-button">Discord</a>
+    </div>
+</div>
 
-<!-- Description-->
-<h3 style="text-align: center;">Welcome! We have vulnerable labs, training, and provide penetration testing services. 
-    <a href="https://discord.gg/P6XsFAnNTY" target="_blank">Discord</a> 
+<h3 style="text-align: center; color: white;">Welcome! We have vulnerable labs, training, and courses.
 </h3>
-<h1 style="text-align: center;">________________________________________________</h1>
+<h1 style="text-align: center; color: white;">________________________________________________</h1>
 
-<!-- ArtefactLabs Section -->
-<h2 style="text-align: center;">ArtefactLabs:</h2>
+<h2 style="text-align: center; color: white;">ArtefactLabs:</h2>
 
-<br></br>
+<br>
 
-<!-- ArtefactLab 1-->
-<div style="text-align: center;">
-    <h3><a href="https://drive.google.com/file/d/1SkZwssuRzHwQg2jreTynUMWpAh3vKX0K/view" target="_blank">Download </a>CEO Lab</h3>
+<div style="text-align: center; color: white;">
+    <h3><a href="https://drive.google.com/file/d/1SkZwssuRzHwQg2jreTynUMWpAh3vKX0K/view" target="_blank" style="color: #2D89EF;">Download </a>CEO Lab</h3>
     <h4 style="display: inline-flex; align-items: center; justify-content: center;">
         <img src="CEO.png" height="150" width="150" style="margin-right: 10px;">
         Beginner Lab.
-        <h4>CTF style with 3 Flags to discover. Simple host discovery, website enumeration, access to host, mysql enumeration, password spraying, and privlage escalation. </h4>
+        <h4>CTF style with 3 Flags to discover. Simple host discovery, website enumeration, access to host, mysql enumeration, password spraying, and privilege escalation.</h4>
     </h4>
     <h4>
-        <a href="https://youtu.be/6_bqk82q7Fw?feature=shared" target="_blank">CEO Lab Walkthrough</a></h4>
+        <a href="https://youtu.be/6_bqk82q7Fw?feature=shared" target="_blank" style="color: #2D89EF;">CEO Lab Walkthrough</a>
+    </h4>
 </div>
 
-<br></br>
+<br>
 
-<!-- ArtefactLab 2-->
-<div style="text-align: center;">
-    <h3><a href="https://drive.google.com/file/d/1G-TcIIs9aCl0EyzDG4UPMNjiFvLeDDCe/view" target="_blank">Download </a>Detective Lab</h3>
+<div style="text-align: center; color: white;">
+    <h3><a href="https://drive.google.com/file/d/1G-TcIIs9aCl0EyzDG4UPMNjiFvLeDDCe/view" target="_blank" style="color: #2D89EF;">Download </a>Detective Lab</h3>
     <h4 style="display: inline-flex; align-items: center; justify-content: center;">
         <img src="detective.png" height="150" width="150" style="margin-right: 10px;">
-            Beginner Lab.
+        Beginner Lab.
         <h4>CTF style. password hash, password, root flag to be discovered. Navigate through the SQL server then crack a hash to gain credentials to root.</h4>
     </h4>
-
-    <h4><a href="https://www.youtube.com/watch?v=luQAAdk_jGA" target="_blank">Detective Lab Walkthrough</a></h4>
+    <h4><a href="https://www.youtube.com/watch?v=luQAAdk_jGA" target="_blank" style="color: #2D89EF;">Detective Lab Walkthrough</a></h4>
 </div>
 
-<br></br>
+<br>
 
-<!-- ArtefactLab Three-->
-
-
-<br></br>
-<!-- Pentesting Section -->
-<!--
-<h1 style="text-align: center;">________________________________________________</h1>
+<h1 style="text-align: center; color: white;">________________________________________________</h1>
 <div>
-    <h2 style="text-align: left;">Penetration Testing Services</h2>
-    <h4 style="text-align: left;"> - Network Penetration Testing</h4>
-    <h4 style="text-align: left;"> - Physical Penetration Testing</h4>
-    <h4 style="text-align: left;"> - Red Teaming</h4>
-    <h4 style="text-align: left;"> - Web Development</h4>
-    <h4 style="text-align: left;"> - Python, HTML, Bash, C#, SQL, Lua/Luau scripting</h4>
-    <h4 style="text-align: left;"><a href="https://payhip.com/b/Ss9fI/post-intake" target="blank">Purchase</a> 30 min consultation</h4>  
-</div>
--->
-
-<br></br>    
-<!-- End of page-->
-<h1 style="text-align: center;">________________________________________________</h1>
-<div>
-<!--
-    <h2 style="text-align: center;">Support us with <a href="https://payhip.com/b/O8WCb" target="_blank">stickers</a>  </h2>
--->
-    <h2 style="text-align: center;">We run on donations. Why not support us at <a href="https://venmo.com/u/Artefactlab" target="_blank">Venmo?</a> &#128522;  </h2>
-
-    
-    <p style="text-align: right;">Made with love by Artefact</p> 
+    <h2 style="text-align: center; color: white;">We run on donations. Why not support us at <a href="https://venmo.com/u/Artefactlab" target="_blank" style="color: #2D89EF;">Venmo?</a> &#128522;</h2>
+    <p style="text-align: right; color: white;">Made with love by Artefact</p>
 </div>
 
 </body>
 </html>
-
