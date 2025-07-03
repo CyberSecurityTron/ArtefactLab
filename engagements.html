@@ -71,6 +71,55 @@
             text-align: center;
             margin: 30px 20px;
         }
+
+        .content-container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: rgba(42, 83, 56, 0.7);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        th {
+            background-color: rgba(45, 137, 239, 0.3);
+            font-weight: bold;
+            color: white;
+        }
+
+        td {
+            color: white;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive table */
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+            
+            th, td {
+                padding: 8px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -88,7 +137,8 @@
     </div>
 </div>
 
-  <section id="team" style="color: white;"">
+<div class="content-container">
+  <section id="team" style="color: white;">
     <h2>Our Team</h2>
     <p>ArtefactLab delivers engagements through a dedicated team of four specialized penetration testers, experienced in:</p>
     <ul>
@@ -98,7 +148,9 @@
       <li>Wireless and infrastructure testing</li>
     </ul>
   </section>
+</div>
 
+<div class="content-container">
   <section id="pricing" style="color: white;">
     <h2>Engagement Packages and Pricing</h2>
 
@@ -163,7 +215,9 @@
     </table>
 
   </section>
+</div>
 
+<div class="content-container">
   <section id="inclusions" style="color: white;">
     <h3>What’s Included</h3>
     <ul>
@@ -185,11 +239,14 @@
       <li>Remote-first engagements; onsite available (travel billed separately)</li>
     </ul>
   </section>
+</div>
 
+<div style="text-align: center; margin: 30px 20px;">
   <footer style="color: white;">
     <p>To work with our 4-person red team or request a proposal:</p>
     <p><a href="mailto:cybersecartefact@gmail.com">cybersecartefact@gmail.com</a></p>
   </footer>
+</div>
 
 </body>
 </html>
