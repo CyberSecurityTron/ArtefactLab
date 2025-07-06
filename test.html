@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            background-color: rgba(42, 83, 56, 0.08);
+            background-color: rgba(42, 83, 56, 0.514);
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            color: #111111;
+            font-family: Arial, sans-serif;
         }
 
         .header-container {
@@ -24,6 +22,14 @@
             background-color: rgba(42, 83, 56, 0.9);
         }
 
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: rgba(42, 83, 56, 0.7);
+        }
+        
         .header-container h1 {
             display: inline-flex;
             align-items: center;
@@ -31,17 +37,16 @@
             font-size: 1.8rem;
             color: white;
         }
-
+        
         .header-container img {
             margin-right: 10px;
         }
 
         .nav-buttons {
             display: flex;
-            flex-wrap: wrap;
             gap: 10px;
         }
-
+        
         button, .discord-button {
             padding: 8px 16px;
             background-color: #2D89EF;
@@ -50,14 +55,17 @@
             border-radius: 6px;
             cursor: pointer;
             font-size: 14px;
-            transition: all 0.3s;
+            transition: background-color 0.3s;
             text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
 
         button:hover {
             background-color: #1B5FBD;
-            transform: scale(1.03);
         }
+
 
         .discord-button {
             background-color: #7289DA;
@@ -188,7 +196,7 @@
             <tbody>
                 <tr><td>Standard</td><td>1 small app (≤30 endpoints)</td><td>1 tester</td><td>$3,500</td></tr>
                 <tr><td>Advanced</td><td>Medium app or API</td><td>2 testers</td><td>$5,500</td></tr>
-                <tr><td>Enterprise</td><td>Complex app + API</td><td>2–3 testers</td><td>$8,000–$10,000</td></tr>
+                <tr><td>Enterprise</td><td>Complex app + API</td><td>2–3 testers</td><td>$8,000–$10,000+</td></tr>
             </tbody>
         </table>
 
