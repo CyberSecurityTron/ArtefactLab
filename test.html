@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            background-color: rgba(42, 83, 56, 0.514);
+            background-color: rgba(42, 83, 56, 0.08);
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #111111;
         }
 
         .header-container {
@@ -22,14 +24,6 @@
             background-color: rgba(42, 83, 56, 0.9);
         }
 
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            background-color: rgba(42, 83, 56, 0.7);
-        }
-        
         .header-container h1 {
             display: inline-flex;
             align-items: center;
@@ -37,16 +31,17 @@
             font-size: 1.8rem;
             color: white;
         }
-        
+
         .header-container img {
             margin-right: 10px;
         }
 
         .nav-buttons {
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
         }
-        
+
         button, .discord-button {
             padding: 8px 16px;
             background-color: #2D89EF;
@@ -55,17 +50,14 @@
             border-radius: 6px;
             cursor: pointer;
             font-size: 14px;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
             text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
         }
 
         button:hover {
             background-color: #1B5FBD;
+            transform: scale(1.03);
         }
-
 
         .discord-button {
             background-color: #7289DA;
@@ -102,7 +94,6 @@
 
         ul {
             padding-left: 20px;
-            
         }
 
         li {
@@ -129,7 +120,6 @@
 
         tr:nth-child(even) {
             background-color: #f9f9f9;
-            color: white;
         }
 
         tbody tr:hover {
@@ -139,6 +129,7 @@
         footer {
             text-align: center;
             background: #2D89EF;
+            color: white;
             padding: 30px 20px;
         }
 
@@ -175,7 +166,7 @@
 
     <section id="team">
         <h2>Our Team</h2>
-        <p>ArtefactLab delivers engagements through a dedicated team of six specialized penetration testers, experienced in:</p>
+        <p>ArtefactLab delivers engagements through a dedicated team of specialized penetration testers, experienced in:</p>
         <ul>
             <li><i class="fas fa-network-wired"></i> External and internal network exploitation</li>
             <li><i class="fas fa-shield-alt"></i> Active Directory with defense evasion</li>
