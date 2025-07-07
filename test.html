@@ -1,199 +1,185 @@
-```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-  <title>ArtefactLab Labs</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      background-color: rgba(42, 83, 56, 0.514);
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      color: #111;
-      line-height: 1.5;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background-color: rgba(42, 83, 56, 0.7);
-    }
-    .header-container h1 {
-      display: inline-flex;
-      align-items: center;
-      margin: 0;
-      font-size: 1.8rem;
-      color: white;
-    }
-    .header-container img {
-      margin-right: 10px;
-    }
-    .nav-buttons {
-      display: flex;
-      gap: 10px;
-    }
-    .btn, .discord-button {
-      padding: 8px 16px;
-      background-color: #2D89EF;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: background-color 0.3s;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .btn:hover {
-      background-color: #1B5FBD;
-    }
-    .discord-button {
-      background-color: #7289DA;
-    }
-    .discord-button:hover {
-      background-color: #5b6eae;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    section {
-      margin-bottom: 60px;
-    }
-    h2 {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
-    }
-    #labs {
-    }
-    .lab-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .lab-card {
-      background: white;
-      border-radius: 6px;
-      padding: 20px;
-      width: calc(50% - 20px);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      color: black;
-      text-align: center;
-    }
-    .lab-card h3 {
-      margin-top: 0;
-      font-size: 1.3rem;
-      color: rgba(42, 83, 56, 0.7);
-    }
-    .lab-card img {
-      display: block;
-      margin: 0 auto 15px;
-      max-width: 100px;
-    }
-    .lab-card p {
-      margin-bottom: 15px;
-      line-height: 1.4;
-    }
-    .lab-card a {
-      color: #2D89EF;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .lab-card a:hover {
-      text-decoration: underline;
-    }
-    #support p {
-      text-align: center;
-      font-size: 1rem;
-      margin: 0;
-    }
-    #support a {
-      color: #2D89EF;
-      font-weight: 600;
-    }
-    .made-by {
-      text-align: right;
-      margin: 0 30px 30px;
-      font-size: 14px;
-      color: white;
-    }
-  </style>
+    <style>
+        body {
+            background-color: rgba(42, 83, 56, 0.514);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: rgba(42, 83, 56, 0.7);
+        }
+
+        .header-container h1 {
+            display: inline-flex;
+            align-items: center;
+            margin: 0;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .header-container img {
+            margin-right: 10px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button, .discord-button {
+            padding: 8px 16px;
+            background-color: #2D89EF;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button:hover {
+            background-color: #1B5FBD;
+        }
+
+        .discord-button {
+            background-color: #7289DA;
+        }
+
+        .discord-button:hover {
+            background-color: #5b6eae;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .centered-content {
+            text-align: center;
+            margin: 30px 20px;
+        }
+     
+      #labs {
+        margin-bottom: 60px;
+      }
+      .lab-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .lab-card {
+        background: white;
+        border-radius: 6px;
+        padding: 20px;
+        width: calc(50% - 20px);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        text-align: center;
+        color: black;
+      }
+      .lab-card h3 {
+        margin: 0 0 15px;
+        font-size: 1.3rem;
+        color: rgba(42, 83, 56, 0.7);
+      }
+      .lab-card img {
+        display: block;
+        margin: 0 auto 15px;
+        max-width: 100px;
+      }
+      .lab-card p {
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+      .lab-card a {
+        color: #2D89EF;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .lab-card a:hover {
+        text-decoration: underline;
+      }
+
+    </style>
 </head>
 <body>
-  <div class="header-container">
+
+<div class="header-container">
     <h1>
-      <img src="ArtefactLab.png" height="70" width="70" alt="Logo">
-      ArtefactLab
+        <img src="ArtefactLab.png" height="70" width="70" alt="Logo">
+        ArtefactLab
     </h1>
     <div class="nav-buttons">
-      <a href="https://cybersecuritytron.github.io/ArtefactLab" class="btn">ArtefactLab</a>
-      <a href="https://cybersecuritytron.github.io/ArtefactLab/engagements" class="btn">Engagements</a>
-      <a href="https://cybersecuritytron.github.io/ArtefactLab/courses" class="btn">Courses</a>
-      <a href="https://discord.gg/P6XsFAnNTY" class="discord-button" target="_blank">Discord</a>
+        <a href="https://cybersecuritytron.github.io/ArtefactLab"><button>ArtefactLab</button></a>
+        <a href="https://cybersecuritytron.github.io/ArtefactLab/engagements"><button>Engagements</button></a>
+        <a href="https://cybersecuritytron.github.io/ArtefactLab/courses"><button>Courses</button></a>
+        <a href="https://discord.gg/P6XsFAnNTY" target="_blank" class="discord-button">Discord</a>
+    </div>
+</div> 
+<br></br>
+<h3 style="text-align: center; color: #111111;">Welcome! We provide handcrafted vulnerable labs, training, penetration testing, and red teaming engagements.
+</h3>
+<h1 style="text-align: center; color: #111111;">________________________________________________</h1>
+
+<br>
+
+<section id="labs">
+  <h2>Our Labs</h2>
+  <div class="lab-cards">
+    <div class="lab-card">
+      <h3>CEO Lab</h3>
+      <img src="CEO.png" alt="CEO Lab">
+      <p>
+        CTF style: simple host discovery, website enumeration,
+        host access, MySQL enumeration, password spraying, and privilege escalation.
+      </p>
+      <p>
+        <a href="https://drive.google.com/file/d/1SkZwssuRzHwQg2jreTynUMWpAh3vKX0K/view"
+           target="_blank">Download CEO Lab</a>
+      </p>
+      <p>
+        <a href="https://youtu.be/6_bqk82q7Fw?feature=shared"
+           target="_blank">CEO Lab Walkthrough</a>
+      </p>
+    </div>
+    <div class="lab-card">
+      <h3>Detective Lab</h3>
+      <img src="detective.png" alt="Detective Lab">
+      <p>
+        CTF style: password hash cracking, root flag discovery. Navigate SQL server
+        then crack the hash to gain root credentials.
+      </p>
+      <p>
+        <a href="https://drive.google.com/file/d/1G-TcIIs9aCl0EyzDG4UPMNjiFvLeDDCe/view"
+           target="_blank">Download Detective Lab</a>
+      </p>
+      <p>
+        <a href="https://www.youtube.com/watch?v=luQAAdk_jGA"
+           target="_blank">Detective Lab Walkthrough</a>
+      </p>
     </div>
   </div>
-  <main class="container">
-    <section id="labs">
-      <h2>Our Labs</h2>
-      <div class="lab-cards">
-        <div class="lab-card">
-          <h3>CEO Lab</h3>
-          <img src="CEO.png" alt="CEO Lab">
-          <p>
-            CTF style with 3 flags to discover: simple host discovery, website enumeration,
-            host access, MySQL enumeration, password spraying, and privilege escalation.
-          </p>
-          <p>
-            <a href="https://drive.google.com/file/d/1SkZwssuRzHwQg2jreTynUMWpAh3vKX0K/view"
-               target="_blank">Download CEO Lab</a>
-          </p>
-          <p>
-            <a href="https://youtu.be/6_bqk82q7Fw?feature=shared"
-               target="_blank">CEO Lab Walkthrough</a>
-          </p>
-        </div>
-        <div class="lab-card">
-          <h3>Detective Lab</h3>
-          <img src="detective.png" alt="Detective Lab">
-          <p>
-            CTF style: password hash cracking, root-flag discovery. Navigate SQL server
-            then crack the hash to gain root credentials.
-          </p>
-          <p>
-            <a href="https://drive.google.com/file/d/1G-TcIIs9aCl0EyzDG4UPMNjiFvLeDDCe/view"
-               target="_blank">Download Detective Lab</a>
-          </p>
-          <p>
-            <a href="https://www.youtube.com/watch?v=luQAAdk_jGA"
-               target="_blank">Detective Lab Walkthrough</a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="support">
-      <h2>Support Us</h2>
-      <p>
-        We run on donations. Why not support us at
-        <a href="https://venmo.com/u/Artefactlab" target="_blank">Venmo?</a> 😊
-      </p>
-    </section>
-  </main>
-  <div class="made-by">Made with love by Artefact</div>
+</section>
+
+<br>
+
+<h1 style="text-align: center; color: #111111;">________________________________________________</h1>
+<div>
+    <h3 style="text-align: center; color: #111111;">We run on donations. Why not support us at <a href="https://venmo.com/u/Artefactlab" target="_blank" style="color: #2D89EF;">Venmo?</a> &#128522;</h3>
+    <p style="text-align: right; color: #111111;">Made with love by Artefact</p>
+</div>
+
 </body>
 </html>
-```
