@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtefactLab Engagements</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
+         body {
             background-color: rgba(42, 83, 56, 0.514);
             margin: 0;
             padding: 0;
@@ -25,6 +30,7 @@
             color: white;
         }
 
+        
         .header-container img {
             margin-right: 10px;
         }
@@ -33,7 +39,7 @@
             display: flex;
             gap: 10px;
         }
-
+        
         button, .discord-button {
             padding: 8px 16px;
             background-color: #2D89EF;
@@ -67,9 +73,76 @@
             color: inherit;
         }
 
-        .centered-content {
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 30px;
+        }
+
+        ul {
+            padding-left: 20px;
+            
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+       table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            text-align: left;
+            color: black; 
+        }
+        
+        th {
+            background-color: rgba(42, 83, 56, 0.7);
+            color: white;
+        }
+        
+        tbody tr {
+            background-color: white; 
+        }
+        
+        footer {
             text-align: center;
-            margin: 30px 20px;
+            background: rgba(42, 83, 56, 0.7);
+            padding: 30px 20px;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .made-by {
+            text-align: right;
+            margin: 0 30px 30px;
+            font-size: 14px;
+            color: white;
         }
     </style>
 </head>
@@ -88,121 +161,116 @@
     </div>
 </div>
 
-  <section id="team" style="color: #111111;">
-    <h2>Our Team</h2>
-    <p>ArtefactLab delivers engagements through a dedicated team of six specialized penetration testers, experienced in:</p>
-    <ul>
-      <li>External and internal network exploitation</li>
-      <li>Active Directory with defense evasion</li>
-      <li>Web and API application attacks</li>
-      <li>Social engineering and physical entry</li>
-      <li>Wireless and infrastructure testing</li>
-      <li>Reverse engineering and custom exploitation</li>
-    </ul>
-  </section>
+<main class="container">
 
-<h1 style="color: #111111;">________________________</h1>
-<br>
-    
-  <section id="pricing" style="color: #111111;">
-    <h2>Engagement Packages and Pricing</h2>
+    <section id="team">
+        <h2>Our Team</h2>
+        <p>ArtefactLab delivers engagements through a dedicated team of six specialized penetration testers, experienced in:</p>
+        <ul>
+            <li><i class="fas fa-network-wired"></i> External and internal network exploitation</li>
+            <li><i class="fas fa-shield-alt"></i> Active Directory with defense evasion</li>
+            <li><i class="fas fa-code"></i> Web and API application attacks</li>
+            <li><i class="fas fa-user-secret"></i> Social engineering and physical entry</li>
+            <li><i class="fas fa-wifi"></i> Wireless and infrastructure testing</li>
+            <li><i class="fas fa-microchip"></i> Reverse engineering and custom exploitation</li>
+        </ul>
+    </section>
 
-    <h3>Web Application Penetration Testing</h3>
-    <table>
-      <thead>
-        <tr><th>Package</th><th>Scope</th><th>Testers</th><th>Price</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Standard</td><td>1 small app (≤30 endpoints)</td><td>1 tester</td><td>$3,500</td></tr>
-        <tr><td>Advanced</td><td>Medium app or API</td><td>2 testers</td><td>$5,500</td></tr>
-        <tr><td>Enterprise</td><td>Complex app + API</td><td>2–3 testers</td><td>$8,000–$10,000</td></tr>
-      </tbody>
-    </table>
+    <section id="pricing">
+        <h2>Engagement Packages and Pricing</h2>
 
-    <h3>External Network Penetration Testing</h3>
-    <table>
-      <thead>
-        <tr><th>Package</th><th>IP Range</th><th>Testers</th><th>Price</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Starter</td><td>Up to 10 IPs</td><td>1 tester</td><td>$3,000</td></tr>
-        <tr><td>Standard</td><td>11–25 IPs</td><td>2 testers</td><td>$5,000</td></tr>
-        <tr><td>Extended</td><td>26–50 IPs</td><td>2–3 testers</td><td>$7,500+</td></tr>
-      </tbody>
-    </table>
+        <h3>Web Application Penetration Testing</h3>
+        <table>
+            <thead>
+                <tr><th>Package</th><th>Scope</th><th>Testers</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Standard</td><td>1 small app (≤30 endpoints)</td><td>1 tester</td><td>$3,500</td></tr>
+                <tr><td>Advanced</td><td>Medium app or API</td><td>2 testers</td><td>$5,500</td></tr>
+                <tr><td>Enterprise</td><td>Complex app + API</td><td>2–3 testers</td><td>$8,000–$10,000+</td></tr>
+            </tbody>
+        </table>
 
-    <h3>Internal Network and Active Directory Testing</h3>
-    <table>
-      <thead>
-        <tr><th>Organization Size</th><th>Testers</th><th>Price</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Up to 25 users</td><td>1–2 testers</td><td>$4,000 ($160/user)</td></tr>
-        <tr><td>26–100 users</td><td>2 testers</td><td>$6,000–$10,000</td></tr>
-        <tr><td>100+ users</td><td>3–4 testers</td><td>Custom quote</td></tr>
-      </tbody>
-    </table>
+        <h3>External Network Penetration Testing</h3>
+        <table>
+            <thead>
+                <tr><th>Package</th><th>IP Range</th><th>Testers</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Starter</td><td>Up to 10 IPs</td><td>1 tester</td><td>$3,000</td></tr>
+                <tr><td>Standard</td><td>11–25 IPs</td><td>2 testers</td><td>$5,000</td></tr>
+                <tr><td>Extended</td><td>26–50 IPs</td><td>2–3 testers</td><td>$7,500+</td></tr>
+            </tbody>
+        </table>
 
-    <h3>Red Team Engagements</h3>
-    <table>
-      <thead>
-        <tr><th>Scope</th><th>Testers</th><th>Price</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Phishing campaign and recon</td><td>1–2 testers</td><td>$5,000+</td></tr>
-        <tr><td>Physical entry simulation</td><td>2 testers</td><td>$7,500+</td></tr>
-        <tr><td>Full Red Team Operation</td><td>3–4 testers</td><td>$12,000–$25,000+</td></tr>
-      </tbody>
-    </table>
+        <h3>Internal Network and Active Directory Testing</h3>
+        <table>
+            <thead>
+                <tr><th>Organization Size</th><th>Testers</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Up to 25 users</td><td>1–2 testers</td><td>$4,000 ($160/user)</td></tr>
+                <tr><td>26–100 users</td><td>2 testers</td><td>$6,000–$10,000</td></tr>
+                <tr><td>100+ users</td><td>3–4 testers</td><td>Custom quote</td></tr>
+            </tbody>
+        </table>
 
-    <h3>Penetration Testing as a Service</h3>
-    <table>
-      <thead>
-        <tr><th>Plan</th><th>Monthly Price</th><th>Testers</th><th>Includes</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Essentials</td><td>$2,500</td><td>1 tester</td><td>1 app + 5 IPs per quarter</td></tr>
-        <tr><td>Growth</td><td>$5,500</td><td>2 testers</td><td>2 apps + 15 IPs + monthly review</td></tr>
-        <tr><td>Enterprise</td><td>$10,000+</td><td>3–4 testers</td><td>Full scope, always-on testing</td></tr>
-      </tbody>
-    </table>
+        <h3>Red Team Engagements</h3>
+        <table>
+            <thead>
+                <tr><th>Scope</th><th>Testers</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Phishing campaign and recon</td><td>1–2 testers</td><td>$5,000+</td></tr>
+                <tr><td>Physical entry simulation</td><td>2 testers</td><td>$7,500+</td></tr>
+                <tr><td>Full Red Team Operation</td><td>3–4 testers</td><td>$12,000–$25,000+</td></tr>
+            </tbody>
+        </table>
 
-  </section>
+        <h3>Penetration Testing as a Service</h3>
+        <table>
+            <thead>
+                <tr><th>Plan</th><th>Monthly Price</th><th>Testers</th><th>Includes</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Essentials</td><td>$2,500</td><td>1 tester</td><td>1 app + 5 IPs per quarter</td></tr>
+                <tr><td>Growth</td><td>$5,500</td><td>2 testers</td><td>2 apps + 15 IPs + monthly review</td></tr>
+                <tr><td>Enterprise</td><td>$10,000+</td><td>3–4 testers</td><td>Full scope, always-on testing</td></tr>
+            </tbody>
+        </table>
+    </section>
 
-<h1 style="color: #111111;">________________________</h1>
-<br>
-    
-  <section id="inclusions" style="color: #111111;">
-    <h3>What’s Included</h3>
-    <ul>
-      <li>CVSS-scored findings with proof of concept</li>
-      <li>Technical and executive reporting</li>
-      <li>Remediation guidance with risk prioritization</li>
-      <li>Post engagement review meeting</li>
-      <li>Encrypted delivery of all data and files</li>
-      <li>Optional retesting for validation</li>
-    </ul>
-  </section>
+    <section id="inclusions">
+        <h3>What’s Included</h3>
+        <ul>
+            <li>CVSS-scored findings with proof of concept</li>
+            <li>Technical and executive reporting</li>
+            <li>Remediation guidance with risk prioritization</li>
+            <li>Post engagement review meeting</li>
+            <li>Encrypted delivery of all data and files</li>
+            <li>Optional retesting for validation</li>
+        </ul>
+    </section>
 
-  <section id="terms" style="color: #111111;">
-    <h3>Terms and Logistics</h3>
-    <ul>
-      <li>50% deposit required prior to engagement</li>
-      <li>Remaining balance due after report delivery</li>
-      <li>Client must sign test authorization in advance</li>
-      <li>Remote-first engagements; onsite available (travel billed separately)</li>
-    </ul>
-  </section>
+    <section id="terms">
+        <h3>Terms and Logistics</h3>
+        <ul>
+            <li>50% deposit required prior to engagement</li>
+            <li>Remaining balance due after report delivery</li>
+            <li>Client must sign test authorization in advance</li>
+            <li>Remote-first engagements; onsite available (travel billed separately)</li>
+        </ul>
+    </section>
 
-<h1 style="color: #111111;">________________________</h1>
-<br>
-    
-  <footer style="color: #111111;">
-    <p>To work with our six person red team or request a proposal:</p>
+</main>
+
+<footer>
+    <h2>Work With Our Red Team</h2>
+    <p>To request a proposal tailored to your needs:</p>
     <p><a href="mailto:cybersecartefact@gmail.com">cybersecartefact@gmail.com</a></p>
-  </footer>
-<div style="text-align: right; margin: 0 30px 30px;">
-    <p style="color: #111111;">Made with love by Artefact</p>
-</div>
+</footer>
+
+<div class="made-by">Made with love by Artefact</div>
+
 </body>
 </html>
