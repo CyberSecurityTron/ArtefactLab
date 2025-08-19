@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robot Pulse</title>
   <style>
     body {
       margin: 0;
@@ -18,26 +17,11 @@
     .video-wrapper {
       box-shadow: 0 0 40px #00ffe0;
       border-radius: 10px;
-      z-index: 1;
     }
 
-    .robot {
-      position: absolute;
-      bottom: 10%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 120px;
-      height: 120px;
-      background: url('https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif') no-repeat center center;
-      background-size: contain;
-      animation: floaty 2s infinite ease-in-out;
-      z-index: 2;
-    }
-
-    @keyframes floaty {
-      0% { transform: translateX(-50%) translateY(0); }
-      50% { transform: translateX(-50%) translateY(-20px); }
-      100% { transform: translateX(-50%) translateY(0); }
+    iframe {
+      border: none;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -45,6 +29,5 @@
   <div class="video-wrapper">
     <iframe width="300" height="150" src="https://www.youtube.com/embed/sFZjqVnWBhc?autoplay=1&loop=1&playlist=sFZjqVnWBhc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
-  <div class="robot"></div>
 </body>
 </html>
