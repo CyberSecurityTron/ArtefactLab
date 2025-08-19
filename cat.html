@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1 style= center>click screen for chaos :)</h1>
-<div>
-  <script>
-    fetch('https://meowww.lol/cat.js')
-      .then(r => r.text())
-      .then(eval);
-  </script>
-
-  <audio id="catAudio" src="cat.mp3"></audio>
-
-  <script>
-    const audio = document.getElementById('catAudio');
-    audio.play().catch(() => {
-      document.body.addEventListener('click', () => audio.play());
-    });
-  </script>
-</div>
+  <div>
+    <h1 style= center>click screen for chaos :)</h1>
+  </div>
+  <div>
+    <script>
+      fetch('https://meowww.lol/cat.js')
+        .then(r => r.text())
+        .then(eval);
+    </script>
+  
+    <audio id="catAudio" src="cat.mp3"></audio>
+  
+    <script>
+      const audio = document.getElementById('catAudio');
+      audio.play().catch(() => {
+        document.body.addEventListener('click', () => audio.play());
+      });
+    </script>
+  </div>
 
 </body>
 </html>
