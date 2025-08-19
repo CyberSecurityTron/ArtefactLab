@@ -3,55 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dancing Robot</title>
+  <title>Robot Pulse</title>
   <style>
     body {
       margin: 0;
-      background: radial-gradient(#0f0f0f, #1a1a1a);
-      color: #00ffe0;
-      font-family: 'Courier New', monospace;
-      overflow: hidden;
+      background: #0f0f0f;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
+      overflow: hidden;
     }
 
-    h1 {
-      text-shadow: 0 0 10px #00ffe0;
+    .video-wrapper {
+      box-shadow: 0 0 40px #00ffe0;
+      border-radius: 10px;
+      z-index: 1;
     }
 
     .robot {
-      width: 150px;
-      height: 150px;
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 120px;
       background: url('https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif') no-repeat center center;
       background-size: contain;
-      animation: pulse 2s infinite;
+      animation: floaty 2s infinite ease-in-out;
+      z-index: 2;
     }
 
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1) rotate(5deg); }
-      100% { transform: scale(1); }
-    }
-
-    .audio-container {
-      margin-top: 20px;
-    }
-
-    iframe {
-      border: none;
-      box-shadow: 0 0 20px #00ffe0;
+    @keyframes floaty {
+      0% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-20px); }
+      100% { transform: translateX(-50%) translateY(0); }
     }
   </style>
 </head>
 <body>
-  <h1>🤖 Cyber Dance Protocol: Engaged</h1>
-  <div class="robot"></div>
-  <div class="audio-container">
-    
+  <div class="video-wrapper">
     <iframe width="300" height="150" src="https://www.youtube.com/embed/sFZjqVnWBhc?autoplay=1&loop=1&playlist=sFZjqVnWBhc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
+  <div class="robot"></div>
 </body>
 </html>
